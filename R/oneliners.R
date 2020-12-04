@@ -26,7 +26,7 @@ matr <-function(...) {
 #' @export
 checkmark <- function(name, yesno, format = 'latex') {
   if (format %in% c("html", "text")){
-    return(c(name, ifelse(yesno, "✓", "")))
+    return(c(name, ifelse(yesno, "$\\checkmark$", "")))
   } else{
     return(c(name, ifelse(yesno, "$\\checkmark$", "")))
   }
